@@ -230,5 +230,24 @@ read-only
 一个选择符中只能有一个伪元素
 
 1. ::first-letter
-2. ::first-line
-3. 
+2. ::first-line （修饰块级元素）
+3. ::before
+4. ::after
+
+## 特指度 和 层叠
+
+通用符 连接符 特指度
+
+继承，层叠
+
+```css
+/* 行内样式 > ID选择符 > 属性选择符 */
+`#id > *[id="id"]`
+
+/* 重要声明 > 非重要声明 */
+
+p.dark {color: #333 !important; background: white;}
+
+
+```
+
