@@ -270,4 +270,26 @@ inherit 继承来的属性有特指度
 
 ## 值与单位
 
-
+1. 值
+   1. 关键字
+      1. none/underline..
+      2. 全局关键字 (属性值all)
+         1. inherit
+         2. initial
+         3. unset
+   2. 字符串
+      1. 注意引号配对
+      2. 转义
+   3. url
+      1. 相对路径
+      2. 绝对路径
+      3. 其他服务器上的相对路径
+      4. `body {background: url(images/icon.png)}` url 与 括号之间不能有空格，
+   4. image
+      1. url
+      2. image-set
+      3. gradient
+   5. 标识符
+      1. identifier
+2. 数字与百分数
+   1. 
