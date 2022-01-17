@@ -220,7 +220,8 @@ read-only
 
 5. target 伪类
 6. lang 伪类 lang(fr)
-7. 否定伪类 :not(xxx)
+7. lang 伪类 lang(fr)
+8. 否定伪类 :not(xxx)
    1. 可以串联
    2. 不可以嵌套
 
@@ -344,4 +345,39 @@ inherit 继承来的属性有特指度
 
 ## flex
 
- flex-flow
+flex-flow
+
+
+## 背景
+
+```css
+html {
+   background-color: #ffffff33;
+}
+body {
+  background-image: url("paper.gif");
+    background-repeat: repeat-x;
+    /* value no-repeat can no repeat */
+    background-position: right top;
+}
+
+```
+
+## 盒模型
+
+### border
+
+border-style 中 none 和 hidden 的区别： 在表格中可能发生边框冲突，这个时候，none 的优先级最低，显示其他边框样式。 hidden 优先级最高，不显示样式。
+
+### margin
+
+只有普通文档流中块框的`垂直外边距`才会发生外边距合并。行内框、浮动框或绝对定位之间的外边距不会合并。
+
+假设有一个空元素，它有外边距，但是没有边框或填充。在这种情况下，上外边距与下外边距就碰到了一起，它们会发生合并：
+
+![空元素合并](images/2022-01-17-22-45-34.png)
+
+如果这个外边距遇到另一个元素的外边距，它还会发生合并：
+
+![空元素持续合并](images/2022-01-17-22-46-25.png)
+
