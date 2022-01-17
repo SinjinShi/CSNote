@@ -327,5 +327,21 @@ inherit 继承来的属性有特指度
 3. font-face
    1. 懒加载
    2. 但是浏览器实现时会提前全部下载
-4. 兼容性
-5. 
+4. 兼容性载入
+5. font-style
+6. font-weight
+   1. normal(400) bold(700) bolder lighter 100-900
+
+## 文本属性
+
+1. 段落格式
+   1. 缩进 text-indent
+   2. 文本对齐 text-align
+      1. justify
+   3. text-align-last > text-align
+
+### 行高的继承
+
+## flex
+
+ flex-flow
