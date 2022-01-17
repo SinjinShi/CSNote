@@ -292,4 +292,40 @@ inherit 继承来的属性有特指度
    5. 标识符
       1. identifier
 2. 数字与百分数
-   1. 
+   1. 整数
+   2. 数字
+   3. 百分数
+   4. 弹性值
+   5. 距离
+      1. 绝对长度单位 in cm mm q pt pc px 
+      2. 相对长度单位 em ex rem ch
+      3. 视区单位   vw vh vmin vmax
+      4. 计算值 calc() 20个算子
+3. 颜色
+   1. 具名2颜色
+   2. RGB RGBa(整数和百分数不能混用)，alpha->opacity 不透明度 只能在0-1之间，不能用百分数
+   3. HSL HSLa
+   4. transparent
+   5. currentColor
+4. angle 
+   1. deg
+   2. grad
+   3. rad
+   4. turn
+5. 时间 频率
+   1. s ms
+   2. hz khz
+6. 位置
+7. 自定义值
+
+## 字体
+
+1. 通用字体族
+2. 使用引号
+   1. 字体名称存在空格 或者 符号
+   2. 区别于字体族
+3. font-face
+   1. 懒加载
+   2. 但是浏览器实现时会提前全部下载
+4. 兼容性
+5. 
