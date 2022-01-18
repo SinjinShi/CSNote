@@ -365,6 +365,8 @@ body {
 
 ## 盒模型
 
+盒模型不会继承
+
 ### border
 
 border-style 中 none 和 hidden 的区别： 在表格中可能发生边框冲突，这个时候，none 的优先级最低，显示其他边框样式。 hidden 优先级最高，不显示样式。
