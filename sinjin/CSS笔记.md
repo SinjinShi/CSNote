@@ -343,5 +343,6 @@ inherit 继承来的属性有特指度
 ### 行高的继承
 
 ## flex
-
- flex-flow
+ flex-wrap: wrap;
+flex-flow
+align-content
