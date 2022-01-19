@@ -1,4 +1,4 @@
-# CS-Note
+# Note
 
 > Life is fucking movie!
 
