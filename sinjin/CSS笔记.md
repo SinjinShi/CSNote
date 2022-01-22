@@ -332,14 +332,22 @@ inherit 继承来的属性有特指度
 5. font-style
 6. font-weight
    1. normal(400) bold(700) bolder lighter 100-900
+7. font: font-size 和 font-family 的值是必需的
 
 ## 文本属性
 
 1. 段落格式
    1. 缩进 text-indent
-   2. 文本对齐 text-align
-      1. justify
+   2. 文本方向对齐 text-align
+      1. justify 两端对齐
    3. text-align-last > text-align
+   4. text-transform
+
+衬线字体（Serif）- 在每个字母的边缘都有一个小的笔触。它们营造出一种形式感和优雅感。
+无衬线字体（Sans-serif）- 字体线条简洁（没有小笔画）。它们营造出现代而简约的外观。
+等宽字体（Monospace）- 这里所有字母都有相同的固定宽度。它们创造出机械式的外观。
+草书字体（Cursive）- 模仿了人类的笔迹。
+幻想字体（Fantasy）- 是装饰性/俏皮的字体。
 
 ### 行高的继承
 
@@ -366,6 +374,15 @@ body {
 ## 盒模型
 
 盒模型不会继承
+
+```css
+/* border-box 的元素  border + padding + 内容的大小 等于width */
+p {
+
+   width: 100px;
+   box-sizing: border-box;//content-box
+}
+```
 
 ### border
 
