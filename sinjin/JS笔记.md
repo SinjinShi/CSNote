@@ -14,7 +14,7 @@ NaN -> not a number
 case sensitive
 
 let
-const all uppercase letters,with words separated by an underscore
+const: all uppercase letters,with words separated by an underscore
 
 floats 格式在操作的时候可能会被四舍五入导致数据不准确
 

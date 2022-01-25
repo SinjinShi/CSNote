@@ -168,7 +168,7 @@ ul~li {color:#fff;}
 :last-of-type
 
 :nth-child(2n+1)
-//n取值0，1，2，3.html元素是从一开始计算的
+//n取值0，1，2，3.  html元素是从一开始计算的
 nth-child(odd) //奇数
 nth-child(even) //偶数
 :nth-last-child(2n+1)
@@ -189,6 +189,9 @@ focus（注意和ui状态伪类区分）
 hover
 active
 
+排列有先后顺序要求
+
+link-visited-hover-active
 ---
 
 `UI状态伪类`
@@ -351,10 +354,29 @@ inherit 继承来的属性有特指度
 
 ### 行高的继承
 
+## 表格
+
+```css
+/* 表格 边框折叠 */
+table {
+  border-collapse: collapse;
+}
+
+
+```
+
 ## flex
  flex-wrap: wrap;
 flex-flow
 align-content
+
+## display:none visibility:hidden
+
+position: absolute; 的元素相对于最近的定位祖先元素进行定位（而不是相对于视口定位，如 fixed）。
+
+然而，如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动。
+
+注意：“被定位的”元素是其位置除 static 以外的任何元素（如果父元素是 static，那么就找上一级父元素，直到找到属性非static 的元素 或者 body 元素）。
 
 ## 背景
 
@@ -400,3 +422,35 @@ border-style 中 none 和 hidden 的区别： 在表格中可能发生边框冲�
 
 ![空元素持续合并](images/2022-01-17-22-46-25.png)
 
+
+## draft
+
+z-index 作用于 定位元素，值为自然数，范围在 正负一定范围内。如果没有声明，则按元素的默认值排序，默认值相同，后者覆盖前者。数值越大，层数越高
+
+overflow auto - 与 scroll 类似，但仅在必要时添加滚动条
+
+float
+clear
+
+```css
+/* 浮动子元素 大于 父元素时，使用以下方法 避免溢出 */
+.clearfix {
+  overflow: auto;
+}
+
+/* 或者一下方法 */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+```
+
+overflow：hidden 作用
+
+
+1. 溢出隐藏
+2. 清除浮动
+3. 解决外边距塌陷
