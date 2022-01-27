@@ -454,3 +454,6 @@ overflow：hidden 作用
 1. 溢出隐藏
 2. 清除浮动
 3. 解决外边距塌陷
+
+float : fixed/sticky
+position:relative
