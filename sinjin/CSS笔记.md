@@ -457,3 +457,74 @@ overflow：hidden 作用
 
 float : fixed/sticky
 position:relative
+
+## animation
+
+animation 是可以接收多个动画
+
+```css
+
+div {
+    animation: falldown 2s, fadeIn 2s;
+}
+
+@keyframes falldown {
+    100% {
+        transform: translate(0, 150px);
+    }
+}
+@keyframes fadeIn {
+    100% {
+        opacity: 0;
+    }
+}
+
+```
+
+在 CSS 动画 @keyframes 的定义中，from 等同于 0%，而 to 等同于 100%。
+
+
+元素 自身样式 与 动画 开始结束 样式关系 （与 循环次数（可以小数） 和 方向 有关）
+
+- animation-fill-mode: none
+
+动画结束后回到默认样式
+
+![none](images/2022-01-28-16-11-59.png)
+
+- animation-fill-mode: forwards
+
+![forwords](images/2022-01-28-16-12-54.png)
+
+- animation-fill-mode: backwards
+
+![backwards](images/2022-01-28-16-13-25.png)
+
+- animation-fill-mode: both
+
+动画保持 初始和结束关键帧的样式
+
+![both](images/2022-01-28-16-14-23.png)
+
+### 动画优化
+
+#### 使用 GPU 加速 
+
+（局部生成  GraphicsLayer  重绘）
+
+
+- 3D 或透视变换(perspective、transform) CSS 属性
+- 使用加速视频解码的
+- 拥有 3D (WebGL) 上下文或加速的 2D 上下文的 元素
+- 混合插件(如 Flash)
+- 对自己的 opacity 做 CSS 动画或使用一个动画变换的元素
+- 拥有加速 CSS 过滤器的元素
+- 元素有一个包含复合层的后代节点(换句话说，就是一个元素拥有一个子元素，该子元素在自己的层里)
+- 元素有一个 z-index 较低且包含一个复合层的兄弟元素(换句话说就是该元素在复合层上面渲染)
+
+#### 减少使用耗性能样式
+
+#### will-change
+
+1. 不要应用在太多元素
+2. 使用后 浏览器会更长久得保存，最佳实践： 当元素变化之前和之后通过脚本来切换 will-change 的值。
