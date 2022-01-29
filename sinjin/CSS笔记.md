@@ -528,3 +528,21 @@ div {
 
 1. 不要应用在太多元素
 2. 使用后 浏览器会更长久得保存，最佳实践： 当元素变化之前和之后通过脚本来切换 will-change 的值。
+
+
+##  @property
+## svg
+
+ transition 过渡
+
+ 通过媒体查询 完成响应式
+
+ ```css
+ @media screen and (max-width:1000px) {
+  .col-25, .col-75 {
+    width: 99%;
+    margin-top: 0;
+  }
+}
+ 
+ ```
