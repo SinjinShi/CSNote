@@ -238,17 +238,15 @@ read-only
 3. ::before
 4. ::after
 
-## 特指度 和 层叠
+## 特异性 和 层叠
 
-### 特指度
+### 特异性（specificity）
 
 通用符 连接符 特指度
 
 继承，层叠
 
 ```css
-/* 行内样式 > ID选择符 > 属性选择符 */
-`#id > *[id="id"]`
 
 /* 重要声明 > 非重要声明 */
 
@@ -257,7 +255,27 @@ p.dark {color: #333 !important; background: white;}
 
 ```
 
-继承 零特指度 > 通用符的无特指度
+特异性（specificity）相同时，最新规则覆盖旧规则
+
+继承的属性 specificity 为 0，使用通用符设置的属性无 specificity，所以 继承 特异性大于 通用符
+
+ID 选择器比属性选择器拥有更高的特异性
+
+`#id > *[id="id"]`
+
+上下文选择器比单一元素选择器更具体 - 嵌入式样式表更靠近要设置样式的元素
+
+类选择器会击败任意数量的元素选择器 - 类选择器（诸如 .intro 会击败 h1、p、div 等）
+
+行内样式 - 行内（内联）样式直接附加到要设置样式的元素。实例：<h1 style="color: #ffffff;">。
+
+ID - ID 是页面元素的唯一标识符，例如 #navbar。
+
+类、属性和伪类 - 此类别包括 .classes、[attributes] 和伪类，例如：:hover、:focus 等。
+
+元素和伪元素 - 此类别包括元素名称和伪元素，比如 h1、div、:before 和 :after。
+
+
 
 盒模型属性不继承
 
@@ -432,6 +450,8 @@ overflow auto - 与 scroll 类似，但仅在必要时添加滚动条
 float
 clear
 
+清除浮动
+
 ```css
 /* 浮动子元素 大于 父元素时，使用以下方法 避免溢出 */
 .clearfix {
@@ -546,3 +566,10 @@ div {
 }
  
  ```
+
+
+## 计数器 
+
+计数器 可以嵌套
+
+background-clip和background-origin的区别
