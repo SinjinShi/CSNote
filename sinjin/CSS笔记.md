@@ -575,8 +575,34 @@ div {
 background-clip和background-origin的区别
 
 overflow
+
 float
+
 position
 
 transform 
 transform-origin
+
+```css
+/* 全局变量 */
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+
+/* 在相应的选择器内声明 局部变量 近在该选择器内生效 */
+
+button {
+  --blue: #0000ff;
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+/* 使用变量时，可以填写 回退值 */
+div {
+   color: var(--blue);
+   background-color: var(--blue,#123)
+}
+```
