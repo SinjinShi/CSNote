@@ -606,3 +606,35 @@ div {
    background-color: var(--blue,#123)
 }
 ```
+
+ display: flex;
+
+flex-flow
+
+- flex-direction
+- flex-wrap
+
+justify-content 属性用于对齐容器
+
+- space-between
+- space-around
+
+
+align-items 子元素对齐子元素高度
+align-content 属性用于垂直对齐容器内高度
+
+flex 容器的直接子元素会自动成为弹性（flex）项目。
+
+始终移动优先设计
+
+```css
+
+/* 网格项目 */
+.item1 {
+  grid-column: 1 / 5;
+}
+.item1 {
+  grid-column: 1 / span 3;
+}
+
+```
