@@ -1,5 +1,10 @@
 # JS 入门笔记
 
+> 学习资料
+
+[阮一峰JS入门](https://wangdoc.com/javascript/basic/introduction.html)
+[阮一峰ES6入门](https://es6.ruanyifeng.com/)
+
 ## 基础语法
 
 ### 变量
