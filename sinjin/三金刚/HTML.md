@@ -456,14 +456,16 @@ inline-block
 
 ### 转义字符
 
-展示 `<a>` 会被浏览器转义成  <a>
+展示 `<a>a</a>` 会被浏览器转义成  <a>a</a>
 
 需要使用转义字符替换
 
-`&lt;a&gt;`
+`&lt; a &gt;`
 
-&nbsp;：空格 （non-breaking spacing，不断打空格）
-&lt;：小于号（less than）
-&gt;：大于号（greater than）
+- 常用转义字符
+
+`&nbsp;`：空格 （non-breaking spacing，不换行空格）
+`&lt;`：小于号（less than）
+`&gt;`：大于号（greater than）
 
 <i> 原来用于表示斜体，由于简短， ICON  单词首字母相同，常用于展示图标

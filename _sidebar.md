@@ -1,4 +1,9 @@
 - [首页](/)
-- [CSS笔记.md](/sinjin/CSS笔记.md)
-- [JS笔记.md](/sinjin/JS笔记.md)
-- [网络.md](/sinjin/网络.md)
+- [01六边形战士.md](/sinjin/01六边形战士.md)
+- **三金刚**
+  - [CSS.md](/sinjin/三金刚/CSS.md)
+  - [HTML.md](/sinjin/三金刚/HTML.md)
+  - [JS.md](/sinjin/三金刚/JS.md)
+- **相关**
+  - [Nginx.md](/sinjin/相关/Nginx.md)
+  - [网络.md](/sinjin/相关/网络.md)
