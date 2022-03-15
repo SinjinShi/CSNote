@@ -469,3 +469,10 @@ inline-block
 `&gt;`：大于号（greater than）
 
 <i> 原来用于表示斜体，由于简短， ICON  单词首字母相同，常用于展示图标
+
+### 自闭合元素
+
+input  
+img  
+br hr  
+meta link  
