@@ -1,5 +1,7 @@
 # CSS笔记
 
+《CSS权威指南》
+
 > replaced element
 > Nonreplaced element
 
@@ -679,3 +681,70 @@ id 用于 js
 ## 进阶
 
 清除默认样式的样式表
+
+css 自定义属性  CSS Custom Properties
+
+--*来声明变量名，var(--*)来使用，也许你要问了，为什么使用--不用$一类的呢，唉，那不是sass、less两个货用了吗
+
+声明和使用必须放在{}代码块里
+
+body{
+    --bg-color: lightblue;
+    background-color: var(--bg-color);
+}
+https://www.cnblogs.com/cangqinglang/p/11384703.html
+
+
+脱离标准文档流
+
+清除浮动：本质是撑起父元素的高度，使元素在指定的元素内浮动，便于掌控布局
+
+1. 内墙法
+   1. clear：both
+2. overflow：hidden  父元素 撑起高度
+
+
+
+
+1,3,4,5,6,7,8,10,11,15,20,21,22,23,24,附录B
+
+历史状态管理
+
+事件
+
+webpack
+vuex vue-router 还有什么element-ui
+
+标准文档流中，竖直方向的margin不叠加，取较大的值**作为margin(水平方向的margin是可以叠加的，即水平方向没有塌陷现象)。
+浮动元素 margin 不会塌陷
+
+如果父亲没有border，儿子的margin会以"流"为基准，父亲与儿子一起下移
+
+margin这个属性，本质上描述的是兄弟和兄弟之间的距离； 最好不要用这个marign表达父子之间的距离。
+
+### 相对定位
+
+### 绝对定位
+
+绝对定位的盒子脱离了标准文档流。
+
+所以，所有的标准文档流的性质，绝对定位之后都不遵守了。
+
+绝对定位之后，标签就不区分所谓的行内元素、块级元素了，不需要display:block就可以设置宽、高了
+
+绝对定位 top  指的是页面而不窗口的左上角
+
+bottom 指的是`页面首屏`的左下角
+
+如果父辈出现定位（无论哪种方式），以离自己最近的父辈为参考（即定位可能以祖先元素为参考），无视父辈的 padding 元素，以 border 内侧为参考
+
+
+z-index
+
+是一个自然数,默认的z-index值是0，有大小上限（不同浏览器不一样）
+
+同一个父容器内，z-index一样，html 后写元素比先写元素高
+
+定位元素才有z-index 值，浮动元素没有
+
+父元素被覆盖，子元素的z-index 大一样被覆盖
