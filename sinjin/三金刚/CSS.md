@@ -748,3 +748,87 @@ z-index
 定位元素才有z-index 值，浮动元素没有
 
 父元素被覆盖，子元素的z-index 大一样被覆盖
+
+
+行内元素居中
+
+text-align 
+line-height 和 行内元素 高度一致
+
+块级元素居中
+
+绝对定位 + translate
+
+
+[BFC （Block Formatting Context） 问题](https://www.cnblogs.com/elcarim5efil/p/4745796.html)
+
+
+外边距塌陷
+
+浮动导致父元素高度塌陷
+
+浮动元素 覆盖普通元素
+
+overflow： hidden 
+
+浮动元素 脱离文档流，不影响普通元素位置，但是没有脱离文本流，所以会导致普通元素内的文本 环绕排布
+
+
+
+
+
+inline-block
+
+处理间隙
+1. 设置父元素container的字体大小为0，即font-size: 0，然后设置子元素 div1、div2的字体font-size: 12px。
+2. 在写法上，去掉div1和div2之间的换行。改为：
+
+
+字体
+
+fallback 机制
+
+字重
+
+字体特效
+
+注意收费
+
+
+
+过渡
+
+设置 旋转中心
+
+
+
+perspective 透视效果
+
+动画
+
+steps 补帧动画
+
+
+
+css 预处理器
+
+Sass less stylus
+
+
+
+## flex
+
+- 弹性盒子
+  - flex-direction
+  - flex-wrap
+  - justify-content
+  - align-items
+  - align-content
+- 子元素
+  - 权重 `flex:3;`
+    - 设置权重，多余空间按权重分配
+
+图片来自 
+<https://web.qianguyihao.com/>
+
+![123](http://img.smyhvae.com/20190821_2101.png)
