@@ -1,6 +1,6 @@
 # Note
 
-> Life is fucking movie!
+> 事已至此，先吃饭吧
 
 人生就是为了去码头搞点薯条:fries:
 
