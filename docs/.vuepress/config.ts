@@ -1,12 +1,26 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
+
   lang: "zh-CN",
-  title: "主题演示",
-  description: "vuepress-theme-hope 的演示",
+  title: "SINJIN Note",
+  description: "学习笔记",
 
   base: "/note/",
 
   theme,
+  plugins: [
+    searchPlugin({
+      // ...
+  
+      locales: {
+        "/": {
+          placeholder: "搜索",
+        },
+      },
+    })
+  ],
+  
 });
