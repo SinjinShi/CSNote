@@ -39,3 +39,4 @@ npm run lint
 组件 定义与注册
 
 vue.component
+
