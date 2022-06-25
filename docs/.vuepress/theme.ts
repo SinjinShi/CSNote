@@ -7,7 +7,7 @@ export default hopeTheme({
     name: "SINJIN"
   },
 
-  iconAssets: "//at.alicdn.com/t/font_2410206_h4r1xw8ppng.css",
+  iconAssets: "//at.alicdn.com/t/font_2410206_mfj6e1vbwo.css",
   iconPrefix: "iconfont icon-",
 
   logo: "/logo.png",
@@ -20,7 +20,11 @@ export default hopeTheme({
   navbar: navbar,
 
   // sidebar
-  sidebar: sidebar,
+  sidebar: {
+    "/前端/": "structure",
+    "/hex/": "structure",
+    "/": ["readme"],
+  },
 
   footer: "事已至此，先吃饭吧",
 

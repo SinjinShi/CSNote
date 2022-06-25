@@ -1,5 +1,5 @@
 ---
-home: true
+
 title: Home
 icon: home
 heroImage: /logo.png
@@ -7,7 +7,7 @@ heroText: 学习笔记
 tagline: 学习笔记，记录，复盘，成长
 actions:
   - text: 进入正题
-    link: /hex/
+    link: /sinjin/六边形战士
     type: primary
 
 
