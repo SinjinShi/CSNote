@@ -1,20 +1,9 @@
 ---
-
-title: Home
-icon: home
-heroImage: /logo.png
-heroText: 学习笔记
-tagline: 学习笔记，记录，复盘，成长
-actions:
-  - text: 进入正题
-    link: /sinjin/六边形战士
-    type: primary
-
-
+icon: frame
 ---
 
-> 事已至此，先吃饭吧
+# 六边形战士
 
-人生就是为了去码头搞点薯条:fries:
+> 开发相关得软技能，我都会放在这里
 
-好好学习
+我们喜欢偷懒
